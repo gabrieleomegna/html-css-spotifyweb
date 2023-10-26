@@ -21,7 +21,7 @@ body {
 
 /*******     HEADER     *******/
 header#side-header {
-    width: 60px;
+    width: 55px;
     height: calc(100vh - 60px);
     background-color: black;
 }
@@ -50,13 +50,26 @@ main {
     padding: .6rem 1.7rem;
     border: 1px solid white;
     border-radius: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     font-size: .7rem;
 }
 
 /******    HEADER of MAIN    ******/
-main .main-nav .nav-section {
+main .main-header{
+    padding: 1rem;
+    font-size: .8rem;
+    justify-content: center;
+}
+main .main-header .nav-section {
     color: rgb(130, 132, 136);
+    width: calc(100% / 4);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+main .main-header .nav-section:nth-child(5),
+main .main-header .nav-section:nth-child(6) {
+    margin-top: 2rem;
 }
 
 
@@ -72,10 +85,15 @@ footer#task-bar {
 }
 
 @media screen and (min-width: 576px) {
+    /******   HEADER    ******/
     header#side-header {
         width: 220px;
     }
+    /******   MAIN   *******/
     main {
         width: calc(100% - 220px);
     }
+    /****  HEADER of MAIN  ****/
+
+
 }
