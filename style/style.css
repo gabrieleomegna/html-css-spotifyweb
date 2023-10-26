@@ -8,3 +8,41 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+/*****    class test    *******/
+.border-test {
+    border: 1px dashed magenta;
+}
+
+/********     WRAPPER     *********/
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*******     HEADER     *******/
+header#side-header {
+    width: 100px;
+    height: calc(100vh - 100px);
+    background-color: black;
+}
+/*********     MAIN    ********/
+main {
+    width: calc(100% - 100px);
+    height: calc(100vh - 100px);
+    background-color: rgb(20, 25, 34);
+}
+/********    TASK-BAR    ********/
+footer#task-bar {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+}
+
+@media screen and (min-width: 576px) {
+    header#side-header {
+        width: 220px;
+    }
+    main {
+        width: calc(100% - 220px);
+    }
+}
