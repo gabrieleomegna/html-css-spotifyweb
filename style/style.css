@@ -10,7 +10,7 @@ body {
 }
 /*****    class test    *******/
 .border-test {
-    border: 1px dashed magenta;
+    border: 1px dashed rgb(255, 0, 255);
 }
 
 /********     WRAPPER     *********/
@@ -37,6 +37,7 @@ main {
 }
 
 /*****  Call to action div   *****/
+/*****   This section remains unchanged in all types of layout   *****/
 #call-to-action {
     display: flex;
     justify-content: flex-end;
@@ -83,17 +84,43 @@ footer#task-bar {
     height: 100px;
     background-color: rgb(40, 40, 40);
 }
-
+/* ? Layout mobile s in su */
 @media screen and (min-width: 576px) {
-    /******   HEADER    ******/
+    /* ! *****   HEADER    ******/
     header#side-header {
         width: 220px;
     }
-    /******   MAIN   *******/
+    /* ! *****   MAIN   *******/
     main {
         width: calc(100% - 220px);
     }
-    /****  HEADER of MAIN  ****/
+    /* ! ***  HEADER of MAIN  ****/
+    main .main-header .nav-section {
+        width: calc(100% / 3);
+    }   
+    main .main-header .nav-section:nth-child(4) {
+        margin-top: 2rem;
+    }
+}
+/* ? Layout da mobile/tabler md in su */
+@media screen and (min-width: 768px) {
+    /* ! HEADER of MAIN */
+    main .main-header .nav-section {
+        width: calc(100% / 5);
+    }
+    main .main-header .nav-section:nth-child(4),
+    main .main-header .nav-section:nth-child(5) {
+        margin-top: 0;
+    }
+}
 
-
+/* ? Layout da mobile/tabler md in su */
+@media screen and (min-width: 992px) {
+    /* ! HEADER of MAIN */
+    main .main-header .nav-section {
+        width: calc(100% / 6);
+    }
+    main .main-header .nav-section:nth-child(6) {
+        margin-top: 0;
+    }
 }
