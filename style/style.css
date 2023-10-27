@@ -43,11 +43,15 @@ header .hdr-container-top {
 header .hdr-container-end {
     align-self: flex-end;
     width: 100%;
+    padding: .4rem .6rem;
 }
 .hdr-container-end .mobile-icon {
     background-color: rgb(128, 128, 128);
-    border-radius: 45%;
+    border-radius: 50%;
+    height: 30px;
+    overflow: hidden;
 }
+
 
 
 
