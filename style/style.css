@@ -42,6 +42,9 @@ header .mobile-icon > img {
 header .hdr-container-first {
     padding: .4rem .6rem;
 }
+header .icon-description {
+    display: none;
+}
 /****   Second container in side-bar    *****/
 header .hdr-container-end {
     align-self: flex-end;
@@ -137,6 +140,10 @@ footer#task-bar {
     header#side-header {
         width: 220px;
     }
+    header .hdr-container-first {
+        padding: 1.6rem 1rem;
+        padding-right: 0;
+    }
     header .logo-small > img:nth-child(2) {
         display: block;
         width: 100%;
@@ -148,8 +155,14 @@ footer#task-bar {
         width: 100%;
     }
     header .logo-small {
-        width: 90%;
+        width: 77%;
+        margin-bottom: 1.3rem;
     }
+    header .icon-description {
+        display: inline;
+        color: gray;
+        font-size: .8rem;
+    }   
 
     /* ! *****   MAIN   *******/
     main {
