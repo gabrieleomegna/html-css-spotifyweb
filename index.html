@@ -16,17 +16,29 @@
 <body>
     <div class="flex-wrap">
         <!-- HEADER is placed aside from the main and it is in flex with main -->
-        <header id="side-header">
-            <div class="hdr-container">
+        <header id="side-header" class="flex-wrap">
+            <nav class="hdr-container-top">
                 <section class="logo-small">
                     <img src="img/logo-small.svg" alt="Spotify small logo">
                 </section>
                 <div id="hdr-padding-top">
-                    <section class="mobile-icon"><img src="img/home.svg" alt="Home icon"></section>
-                    <section class="mobile-icon"><img src="img/search.svg" alt="Search icon"></section>
-                    <section class="mobile-icon"><img src="img/libreria.svg" alt="Library ican"></section>
+                    <section class="mobile-icon">
+                        <img src="img/home.svg" alt="Home icon">
+                    </section>
+                    <section class="mobile-icon">
+                        <img src="img/search.svg" alt="Search icon">
+                    </section>
+                    <section class="mobile-icon">
+                        <img src="img/libreria.svg" alt="Library ican">
+                    </section>
                 </div>
-            </div>
+            </nav>
+            <nav class="hdr-container-end border-test">
+                <section class="mobile-icon border-test">
+                    <img src="img/profile.svg" alt="User icon">
+                </section>
+
+            </nav>
         </header>
         <!-- MAIN is in overflow-y auto and it is in flex with sidebar-->
         <main> 

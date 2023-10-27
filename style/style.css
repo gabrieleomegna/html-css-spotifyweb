@@ -20,6 +20,7 @@ body {
 }
 
 /*******     HEADER     *******/
+/****   First container in side-bar    *****/
 header#side-header {
     width: 55px;
     height: calc(100vh - 100px);
@@ -35,9 +36,19 @@ header #hdr-padding-top {
 header .mobile-icon > img {
     filter: opacity(.8);
 }
-header .hdr-container {
+header .hdr-container-top {
     padding: .4rem .6rem;
 }
+/****   Second container in side-bar    *****/
+header .hdr-container-end {
+    align-self: flex-end;
+    width: 100%;
+}
+.hdr-container-end .mobile-icon {
+    background-color: rgb(128, 128, 128);
+    border-radius: 45%;
+}
+
 
 
 
