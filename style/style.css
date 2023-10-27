@@ -45,10 +45,12 @@ header .hdr-container-first {
 /****   Second container in side-bar    *****/
 header .hdr-container-end {
     align-self: flex-end;
-    width: 100%;
     padding: .4rem .6rem;
 }
-.hdr-container-end .mobile-icon {
+.hdr-container-end .mobile-icon:first-child {
+    padding: .4rem;
+}
+.hdr-container-end .mobile-icon:nth-child(2) {
     background-color: rgb(128, 128, 128);
     border-radius: 50%;
     height: 30px;
