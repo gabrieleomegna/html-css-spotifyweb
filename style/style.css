@@ -26,6 +26,9 @@ header#side-header {
     height: calc(100vh - 100px);
     background-color: black;
 }
+header .logo-small > img:nth-child(2) {
+    display: none;
+}
 header .mobile-icon {
     width: 30px;
     margin-top: .35rem;
