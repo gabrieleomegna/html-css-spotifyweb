@@ -50,16 +50,19 @@ header .hdr-container-end {
     align-self: flex-end;
     padding: .4rem .6rem;
 }
-.hdr-container-end .mobile-icon:first-child {
+.hdr-container-end #download {
     padding: .4rem;
 }
-.hdr-container-end .mobile-icon:nth-child(2) {
+.hdr-container-end #user {
     background-color: rgb(128, 128, 128);
     border-radius: 50%;
     height: 30px;
     overflow: hidden;
 }
-
+.hdr-container-end #user-description {
+    color: white;
+    font-weight: 700;
+}
 
 
 
@@ -162,7 +165,10 @@ footer#task-bar {
         display: inline;
         color: gray;
         font-size: .8rem;
-    }   
+    }
+    header .mobile-icon{
+        display: inline-block;
+    }
 
     /* ! *****   MAIN   *******/
     main {
